@@ -6,7 +6,7 @@ body {
   background-color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   /* The html and body elements cannot have any padding or margin. */
-  border-top: 3px solid #27A822;
+  border-top: 4px solid mediumslateblue;
 }
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -17,6 +17,21 @@ body {
   margin: 0 auto -65px;
   /* Pad bottom by footer height */
   /*padding: 0 0 60px;*/
+}
+
+::selection {
+	background:mediumslateblue;
+	color:white;
+}
+
+p {
+	margin: 10px 0;
+}
+
+blockquote {
+	padding: 10px 30px;
+margin: 30px 0;
+border-left: 5px solid mediumslateblue
 }
 
 /* Navbar
@@ -88,7 +103,7 @@ body {
 -------------------------------------------------- */
 
 .container {
-  width: auto;
+  width: 65%;
   max-width: 800px;
   text-align: center;
 }
@@ -96,15 +111,18 @@ body {
   margin: 20px 0;
 }
 .container a {
-  color: #27A822;
+  color: mediumslateblue;
 }
 .container a:hover {
-  color: #267723;
+  color: rgba(123, 104, 238, .7);
+    text-decoration: none;
+
 }
 .img-responsive {
  display: block;
  height: auto;
  max-width: 100%;
+ margin:30px 0;
 }
 .panel-default h4 {
   text-align: left;
@@ -113,31 +131,42 @@ body {
 }
 .panel-default h5 {
   text-align: left;
-  line-height: 30px;
-  font-size: 18px;
+/*  line-height: 30px;
+*/  font-size: 18px;
+  color:#b5b5b5;
 }
 .panel-default h6 {
   font-size: 15px;
 }
 .panel-default h4 a, h5 a {
-  color: #27A822;
+  color: mediumslateblue;
+  text-decoration: none;
 }
 .panel-default h4 a:hover, h5 a:hover {
-  color: #267723;
+  color: rgba(123, 104, 238, .7);
 }
 .panel{
   border-style: none;
+  padding-bottom: 20px;
+  margin-bottom:0;
 }
 .panel-body {
   padding-top: -10px;
   text-align: left;
 }
+.panel-body .row {
+	margin-bottom:20px;
+}
+.panel-body img {
+	margin:0;
+}
 .social {
-  padding-top: 12px;
-  word-spacing: 25px;
+  padding-top: 5px;
+/*  word-spacing: 25px;*/
 }
 .social h4 > a {
-  color: #000000;
+  color: #6b6b6b;
+  margin: 0 10px;
 }
 .avatar {
   padding-top: 5%;
@@ -145,9 +174,14 @@ body {
 .blog-post{
   padding-top: 15px;
 }
+.blog-post h3 {
+  font-weight:100;
+}
 .blog-title{
   padding-top: 2px;
+  color:#b5b5b5;
 }
+.blog-title h4 {}
 .related-posts h4 {
   text-align: center;
 }
@@ -167,14 +201,18 @@ body {
 /* Footer 
 -------------------------------------------------- */
 
+footer {
+	margin-top:40px;
+}
 .footer {
   text-decoration: none !important;
 }
 .text-muted {
 	color: #6b6b6b;
+  font-size:smaller;
 }
 div.footer{
-  border-bottom: 5px solid #27A822;;
+  border-bottom: 8px solid mediumslateblue;
 }
 /* Set the fixed height of the footer here */
 /*.footer {
@@ -182,3 +220,14 @@ div.footer{
   padding-bottom: 15px;
   
 }*/
+
+/* Bootstrap Overrides 
+-------------------------------------------------- */
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+}
+
+
+
+
